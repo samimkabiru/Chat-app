@@ -109,3 +109,21 @@ p {
 .icon--rotated-right {
   transform: rotate(90deg);
 }
+
+/* Text */
+.text {
+  max-width: 200px;
+  padding: 1rem;
+}
+
+.text--left {
+  background: hsla(276 55% 52% / 0.1);
+  color: hsl(276 55% 52%);
+  border-radius: 20px 15px 15px 10px;
+}
+
+.text--right {
+  background: hsla(271 15% 43% / 0.1);
+  color: hsl(271 15% 43%);
+  border-radius: 15px 20px 10px 15px;
+}
