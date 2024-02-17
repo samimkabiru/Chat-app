@@ -86,3 +86,24 @@ p {
   padding: 1.5rem;
   background: hsl(270 20% 96%);
 }
+
+/* Icons */
+.icon-container {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: hsl(271 36% 24%);
+}
+
+.icon-container .icon {
+  color: #fff;
+}
+
+.icon-container .icon--rotated-left {
+  transform: rotate(-90deg);
+}
+
+.icon--rotated-right {
+  transform: rotate(90deg);
+}
