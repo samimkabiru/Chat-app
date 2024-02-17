@@ -127,3 +127,37 @@ p {
   color: hsl(271 15% 43%);
   border-radius: 15px 20px 10px 15px;
 }
+
+/* Pricing */
+.pricing {
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%) 30%,
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 13px 10px 10px 8px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+  padding: 1rem;
+}
+
+.pricing__header {
+  display: flex;
+  align-items: center;
+}
+
+.pricing__radio {
+  width: 19px;
+  height: 19px;
+}
+
+.pricing__text {
+  margin-left: 0.5rem;
+}
+
+.pricing__bill {
+  font-weight: 700;
+  font-size: 2rem;
+}
