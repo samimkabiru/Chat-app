@@ -96,6 +96,7 @@ p {
   background: hsl(271 36% 24%);
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .icon-container .icon {
@@ -160,4 +161,26 @@ p {
 .pricing__bill {
   font-weight: 700;
   font-size: 2rem;
+}
+
+/* Inputs */
+.input {
+  padding: 0.6rem;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  width: 0;
+  flex-grow: 1;
+}
+
+::placeholder {
+  color: hsl(206 6% 79%);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 30px 15px hsl(270 20% 95%);
+  border-radius: 35px;
+  padding: 0.5rem;
 }
