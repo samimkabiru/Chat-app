@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 0 0 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+p {
+  margin: 0;
+}
