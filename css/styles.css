@@ -33,3 +33,20 @@ h2 {
 p {
   margin: 0;
 }
+
+/* Media objects */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media__image {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #fff;
+  border-radius: 100%;
+}
+
+.media__content {
+  margin-left: 1rem;
+}
