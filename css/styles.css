@@ -50,3 +50,39 @@ p {
 .media__content {
   margin-left: 1rem;
 }
+
+/* Chat */
+.chat {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 10px solid #fff;
+  box-shadow: 0 0 30px 20px hsl(270 20% 91%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.chat__top {
+  padding: 1.5rem 8rem;
+  background: #fff;
+  border-radius: 30px;
+  position: absolute;
+  top: -10px;
+}
+
+.chat__header {
+  padding: 2.5rem 1.5rem 1rem;
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%) 25%,
+    hsl(293, 100%, 63%)
+  );
+}
+
+.chat__body {
+  padding: 1.5rem;
+  background: hsl(270 20% 96%);
+}
