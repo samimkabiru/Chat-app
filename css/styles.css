@@ -94,13 +94,15 @@ p {
   height: 30px;
   border-radius: 100%;
   background: hsl(271 36% 24%);
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-container .icon {
   color: #fff;
 }
 
-.icon-container .icon--rotated-left {
+.icon--rotated-left {
   transform: rotate(-90deg);
 }
 
