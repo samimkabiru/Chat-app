@@ -51,6 +51,10 @@ p {
   margin-left: 1rem;
 }
 
+.media__content > p {
+  color: hsl(276 100% 81%);
+}
+
 /* Chat */
 .chat {
   border-radius: 30px;
@@ -61,30 +65,45 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
+  max-width: 370px;
   margin: 0 auto;
 }
 
 .chat__top {
   padding: 1.5rem 8rem;
   background: #fff;
-  border-radius: 30px;
+  border-radius: 25px;
   position: absolute;
   top: -10px;
 }
 
 .chat__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
   padding: 2.5rem 1.5rem 1rem;
   background: linear-gradient(
     to right,
-    hsl(264, 100%, 61%) 25%,
-    hsl(293, 100%, 63%)
+    hsl(264 100% 61%) 25%,
+    hsl(293 100% 63%)
   );
 }
 
 .chat__body {
   padding: 1.5rem;
   background: hsl(270 20% 96%);
+  width: 100%;
+}
+
+.chat__media {
+  display: flex;
+  align-items: center;
+}
+
+.chat__media .media {
+  margin-left: 1rem;
 }
 
 /* Icons */
@@ -99,7 +118,7 @@ p {
   cursor: pointer;
 }
 
-.icon-container .icon {
+.icon {
   color: #fff;
 }
 
@@ -113,34 +132,49 @@ p {
 
 /* Text */
 .text {
-  max-width: 200px;
+  max-width: 230px;
+  margin: 1rem 0;
   padding: 1rem;
 }
 
 .text--left {
   background: hsla(276 55% 52% / 0.1);
   color: hsl(276 55% 52%);
-  border-radius: 20px 15px 15px 10px;
+  border-radius: 20px 18px 18px 10px;
 }
 
 .text--right {
-  background: hsla(271 15% 43% / 0.1);
   color: hsl(271 15% 43%);
-  border-radius: 15px 20px 10px 15px;
+  border-radius: 18px 22px 10px 18px;
+  margin: 0.5rem 0;
+  box-shadow: 4px 4px 10px hsl(270 20% 85%);
+}
+
+.text--right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text__image {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+}
+
+.text__image:nth-of-type(2) {
+  margin: 0 0.5rem;
 }
 
 /* Pricing */
 .pricing {
-  background: linear-gradient(
-    to right,
-    hsl(293, 100%, 63%) 30%,
-    hsl(264, 100%, 61%)
-  );
+  background: linear-gradient(to right, hsl(293 100% 63%), hsl(264 100% 61%));
   border-radius: 13px 10px 10px 8px;
   color: #fff;
   display: flex;
   justify-content: space-between;
-  max-width: 220px;
+  max-width: 250px;
+  margin: 1rem 0;
   padding: 1rem;
 }
 
@@ -183,4 +217,6 @@ p {
   box-shadow: 0 0 30px 15px hsl(270 20% 95%);
   border-radius: 35px;
   padding: 0.5rem;
+  background: #fff;
+  margin-top: 2.2rem;
 }
