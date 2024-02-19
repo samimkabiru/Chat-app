@@ -21,7 +21,7 @@ h2 {
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin: 0 0 1.5rem;
 }
 
@@ -60,13 +60,21 @@ p {
   border-radius: 30px;
   overflow: hidden;
   border: 10px solid #fff;
-  box-shadow: 0 0 30px 20px hsl(270 20% 91%);
+  box-shadow: 15px 15px 30px 20px hsla(270 20% 90% / 0.3);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 370px;
+  width: 370px;
   margin: 0 auto;
+  transition: transform 0.2s;
+}
+
+@media screen and (min-width: 1024px) {
+  .chat {
+    transform: scale(0.7);
+    transition: transform 0.2s;
+  }
 }
 
 .chat__top {
@@ -92,7 +100,7 @@ p {
 }
 
 .chat__body {
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   background: hsl(270 20% 96%);
   width: 100%;
 }
@@ -120,6 +128,7 @@ p {
 
 .icon {
   color: #fff;
+  cursor: pointer;
 }
 
 .icon--rotated-left {
@@ -134,7 +143,7 @@ p {
 .text {
   max-width: 230px;
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 0.9rem;
 }
 
 .text--left {
@@ -218,5 +227,87 @@ p {
   border-radius: 35px;
   padding: 0.5rem;
   background: #fff;
-  margin-top: 2.2rem;
+  margin-top: 2rem;
+}
+
+/* Block */
+.block {
+  padding: 5.5rem 3rem;
+}
+
+/* Info */
+.info {
+  text-align: center;
+  padding-top: 0;
+}
+
+.info__text {
+  color: hsl(270 7% 64%);
+}
+
+.info__heading {
+  color: hsl(271 36% 24%);
+}
+
+@media screen and (min-width: 1024px) {
+  .info {
+    text-align: left;
+    width: 55ch;
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: end;
+  }
+
+  .grid .info {
+    justify-self: self-start;
+  }
+}
+
+/* Backgrounds */
+.background {
+  position: relative;
+}
+
+.bg-purple {
+  width: 550px;
+  height: 600px;
+  border-radius: 0 0 100% 100%;
+  background: linear-gradient(45deg, hsl(264 100% 61%) 25%, hsl(293 100% 63%));
+  position: absolute;
+  left: -20rem;
+  transition: left 0.5s;
+}
+
+.bg-lighter {
+  width: 250px;
+  height: 500px;
+  border-radius: 300px 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: hsla(276 55% 52% / 0.05);
+  transition: border-radius 0.5s, height 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+  .bg-purple {
+    left: -10rem;
+    transition: left 0.5s;
+  }
+
+  .bg-lighter {
+    height: 600px;
+    border-radius: 200px 0 0;
+    transition: border-radius 0.5s, height 0.5s;
+  }
 }
