@@ -30,12 +30,13 @@
       src="https://kit.fontawesome.com/c808f58abd.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="background">
       <div class="bg-purple"></div>
       <div class="bg-lighter"></div>
-      <div class="grid grid--1x2">
+      <div class="grid grid--1x2" data-aos="zoom-in">
         <div class="block">
           <section class="chat">
             <div class="chat__top"></div>
@@ -126,5 +127,9 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
